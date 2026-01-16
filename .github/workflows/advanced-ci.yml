@@ -33,6 +33,10 @@ jobs:
         with:
           task: get-measurement
           label: 'Setup Node.js'
+      - name: Eco-CI Results
+        uses: green-coding-berlin/eco-ci-energy-estimation@v5
+        with:
+          task: display-results
 
       - name: Cache node modules
         uses: actions/cache@v5
